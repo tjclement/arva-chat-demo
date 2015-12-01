@@ -7,6 +7,8 @@ import {Router}                     from 'arva-js/core/Router.js';
 /* Here we import all controllers we want to use in the app */
 import {HomeController}             from './controllers/HomeController.js';
 
+import fontGoodyness                from './font.css!';
+
 /* By injecting these constructors, objects of their type will be created
  * and are globally available through the Dependency Injection context. (arva-utils/Context.js)
  * Be sure to add any new controllers you add after HomeController,
@@ -28,3 +30,4 @@ export class App extends ArvaApp {
         super(router, context);
     }
 }
+
